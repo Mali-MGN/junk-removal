@@ -44,9 +44,8 @@ body {
 /* Hero Section Styling - Uses the primary blue from the logo */
 #hero {
     background-color: var(--color-primary-blue);
-    /* Placeholder image for a background of the DK Disposal truck/team */
-    background-image: linear-gradient(135deg, rgba(139, 195, 232, 0.9) 0%, rgba(100, 160, 200, 0.7) 100%), 
-                      url('https://placehold.co/1600x600/8bc3e8/3f3a46?text=CLEANUP+HEROES+DEPLOYING');
+    /* Background image of the DK superhero flying */
+    background-image: url('../company-logos/dk-hero1.jpg');
     background-size: cover;
     background-position: center;
     padding-top: 6rem;
