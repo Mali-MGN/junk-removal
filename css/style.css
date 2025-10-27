@@ -46,7 +46,7 @@ body {
     background-color: var(--color-primary-blue);
     /* Background image of the DK superhero flying */
     background-image: url('../company-logos/dk-hero1.jpg');
-    background-size: 200%;
+    background-size: 25%;
     background-position: center;
     padding-top: 6rem;
     padding-bottom: 6rem;
