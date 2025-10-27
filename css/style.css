@@ -1,0 +1,93 @@
+/* Define custom colors and font based on the new Superhero Logo image */
+:root {
+    --color-primary-blue: #8bc3e8;   /* Light Sky Blue (Background accent/Header) */
+    --color-action-red: #d13028;     /* Vibrant Red (Cape/CTAs) */
+    --color-action-gold: #fecb2b;    /* Golden Yellow/Orange (DK Letters/Accents) */
+    --color-king-dark: #3f3a46;      /* Deep Navy/Charcoal (Text/Dark Sections) */
+    --color-text-light: #ffffff;     /* White for text on dark backgrounds */
+    --color-text-dark: #18181b;      /* Near Black for text on light backgrounds */
+}
+body { 
+    font-family: 'Inter', sans-serif; 
+    background-color: var(--color-text-light); 
+    scroll-behavior: smooth; 
+}
+
+/* Base CTA Button Styling - Red and commanding with Gold border */
+.cta-button {
+    background-color: var(--color-action-red);
+    color: var(--color-text-light);
+    padding: 0.75rem 2.5rem;
+    font-weight: 800;
+    border-radius: 9999px;
+    box-shadow: 0 10px 15px -3px rgba(209, 48, 40, 0.4), 0 4px 6px -2px rgba(209, 48, 40, 0.05);
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    border: 2px solid var(--color-action-gold);
+}
+.cta-button:hover {
+    background-color: #a31818;
+    transform: translateY(-2px);
+    box-shadow: 0 15px 20px -5px rgba(209, 48, 40, 0.6);
+}
+
+/* Navigation Link Color */
+.nav-link:hover {
+    color: var(--color-action-gold);
+}
+
+/* Header Background (Lighter) */
+#header {
+    background-color: var(--color-text-light);
+}
+/* Hero Section Styling - Uses the primary blue from the logo */
+#hero {
+    background-color: var(--color-primary-blue);
+    /* Placeholder image for a background of the DK Disposal truck/team */
+    background-image: linear-gradient(135deg, rgba(139, 195, 232, 0.9) 0%, rgba(100, 160, 200, 0.7) 100%), 
+                      url('https://placehold.co/1600x600/8bc3e8/3f3a46?text=CLEANUP+HEROES+DEPLOYING');
+    background-size: cover;
+    background-position: center;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+/* Mission Section (Why Choose Us) Styling - Light background, Gold accents */
+#mission .icon-box {
+    border-top: 4px solid var(--color-action-gold);
+    box-shadow: 0 5px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+/* How It Works Section - Dark background for 'Mission' Feel */
+#process {
+    background-color: var(--color-king-dark); /* Deep Navy/Charcoal */
+    /* Removed camouflage pattern for a cleaner, bolder look with the new colors */
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+#process .process-step {
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    background-color: var(--color-king-dark); /* Keeping the steps dark for contrast on dark background */
+    border: 1px solid var(--color-action-gold);
+    color: var(--color-text-light);
+}
+
+/* Testimonials/FAQ Container */
+#faq {
+    background-color: #f0f0f0; /* Soft gray separation */
+}
+
+/* Contact Section (Form) */
+#contact {
+    background-color: var(--color-king-dark);
+}
+#contact .bg-color-king-light {
+    background-color: #5d576a; /* Lighter charcoal for the form card */
+}
+
+/* Footer Style - Darker than Contact */
+footer {
+    background-color: #27272a; 
+}
