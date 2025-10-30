@@ -4,6 +4,7 @@
     --color-action-red: #d13028;     /* Vibrant Red (Cape/CTAs) */
     --color-action-gold: #fecb2b;    /* Golden Yellow/Orange (DK Letters/Accents) */
     --color-king-dark: #3f3a46;      /* Deep Navy/Charcoal (Text/Dark Sections) */
+    --color-crown-brown: #8B4513;    /* Brown color for crown background */
     --color-text-light: #ffffff;     /* White for text on dark backgrounds */
     --color-text-dark: #18181b;      /* Near Black for text on light backgrounds */
 }
@@ -46,8 +47,8 @@ body {
     background-color: var(--color-primary-blue);
     /* Background image of the DK superhero flying */
     background-image: url('../company-logos/dk-hero1.jpg');
-    background-size: 300%;
-    background-position: center;
+    background-size: 75%;
+    background-position: center center;
     padding-top: 6rem;
     padding-bottom: 6rem;
 }
